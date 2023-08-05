@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
-	a.setWindowIcon(QIcon("./skin/app.png"));
+	a.setWindowIcon(QIcon("./app.png"));
 
 	QTestWidget testWidget;
 	testWidget.show();

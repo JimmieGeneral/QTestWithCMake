@@ -11,6 +11,9 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_PREFIX_PATH /home/generaldarknor/Qt/Qt5.12.12/5.12.12/gcc_64)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+message(STATUS "PROJECT_BINARY_DIR[${PROJECT_BINARY_DIR}]")
+file(COPY ${CMAKE_SOURCE_DIR}/Resource/app.png DESTINATION ${PROJECT_BINARY_DIR}/Src)
+
 find_package(Qt5 COMPONENTS REQUIRED Core Gui Widgets)
 
 add_subdirectory(Src)
