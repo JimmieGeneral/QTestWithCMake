@@ -12,19 +12,19 @@ namespace Ui { class QTestWidget; }
 QT_END_NAMESPACE
 
 class QTestWidget : public QWidget {
- 	Q_OBJECT
+	Q_OBJECT
 
- public:
+public:
 	explicit QTestWidget(QWidget *parent = nullptr);
- 	~QTestWidget() override;
+	~QTestWidget() override;
 
-	 void SetWidgetPosition();
+	void SetWidgetPosition();
 
- public slots:
+public slots:
 	void OnBtnClicked();
 
- private:
-  Ui::QTestWidget *ui;
+private:
+	Ui::QTestWidget *ui;
 };
 
 #endif //INC_02_QTEST__QTESTWIDGET_H_

@@ -13,9 +13,10 @@
 #include <QtCore/QList>
 #include <QtCore/QRect>
 
-QTestWidget::QTestWidget(QWidget *parent) :
-	QWidget(parent), ui(new Ui::QTestWidget) {
-
+QTestWidget::QTestWidget(QWidget *parent)
+	: QWidget(parent)
+	, ui(new Ui::QTestWidget)
+{
 	ui->setupUi(this);
 
 	connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(OnBtnClicked()));
@@ -25,7 +26,7 @@ QTestWidget::QTestWidget(QWidget *parent) :
 
 QTestWidget::~QTestWidget()
 {
-  delete ui;
+	delete ui;
 }
 
 void QTestWidget::OnBtnClicked()
@@ -55,6 +56,7 @@ void QTestWidget::SetWidgetPosition()
 		int Y_Up = qlistScreen[i]->geometry().y();
 		int X_Down = X_Up + qlistScreen[i]->geometry().width();
 		int Y_Down = Y_Up + qlistScreen[i]->geometry().height();
+
 		if (iPointCurrentScreenX >= X_Up && iPointCurrentScreenX <= X_Down
 			&& iPointCurrentScreenY >= Y_Up && iPointCurrentScreenY <= Y_Down)
 		{
