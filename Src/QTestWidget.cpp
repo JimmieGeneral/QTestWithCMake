@@ -1,9 +1,3 @@
-//
-// Created by generaldarknor on 23-8-5.
-//
-
-// You may need to build the project (run Qt uic code generator) to get "ui_QTestWidget.h" resolved
-
 #include "QTestWidget.h"
 #include "ui_QTestWidget.h"
 

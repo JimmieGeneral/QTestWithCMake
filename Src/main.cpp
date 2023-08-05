@@ -1,6 +1,6 @@
 #include <QApplication>
 #include <QIcon>
-#include "Src/QTestWidget.h"
+#include "QTestWidget.h"
 
 int main(int argc, char *argv[])
 {

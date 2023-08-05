@@ -1,11 +1,7 @@
-//
-// Created by generaldarknor on 23-8-5.
-//
-
 #ifndef INC_02_QTEST__QTESTWIDGET_H_
 #define INC_02_QTEST__QTESTWIDGET_H_
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QTestWidget; }
